@@ -1,0 +1,9 @@
+name: face-capture
+channels:
+  - defaults
+  - opencv=3.4.2
+dependencies:
+  - pip:
+    - imutils==0.5.2
+    - pafy==0.5.4
+    - youtube-dl==2019.1.10
