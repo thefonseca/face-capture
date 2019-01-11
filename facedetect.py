@@ -51,7 +51,7 @@ class FaceDetector:
             box = detections[0, 0, i, 3:7] * np.array([w, h, w, h])
             (startX, startY, endX, endY) = box.astype("int")
             face['box'] = box.astype("int")
-            face['image'] = frame[startY:endY, startX:endX]
+            face['image'] = frame[startY:endY, startX:endX].copy()
             faces.append(face)
 
             # draw the bounding box of the face along with the associated
