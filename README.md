@@ -33,3 +33,16 @@ python detect_faces_youtube.py -v cUw18IAkmvE
 ```
 python detect_faces_youtube.py -p PLitz1J-q25kMvoRT9AIPfWoFIv4wzoUPi --playlist-start 1 -s 20
 ```
+
+### Detect and save faces in playlists specified in a JSON file
+```
+python detect_faces_youtube.py --json ./videos.json --save-every 20
+```
+Where the `videos.json` file can be specified as follows:
+```
+{
+  "playlist_1": ["-pXziPT8Rbk", "pTZ_ztt8EIE"],
+  "playlist_2": ["bgvGmvPO_iI", "Q1mpWWK1zWs", "rRBUGmnA2_0"]
+  ...
+}
+```
