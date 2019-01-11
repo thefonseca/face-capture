@@ -2,6 +2,7 @@ name: face-capture
 channels:
   - defaults
   - opencv=3.4.2
+  - tqdm=4.28.1
 dependencies:
   - pip:
     - imutils==0.5.2
